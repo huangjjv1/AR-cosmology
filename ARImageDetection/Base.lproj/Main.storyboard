@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="AR_Detection_v1_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jmm-wr-hNL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TOo-V8-amg">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2o-hP-Ncg">
+                                <rect key="frame" x="182" y="784" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="MOT-jK-wJo"/>
+                                    <constraint firstAttribute="width" constant="50" id="Ni9-Y1-46G"/>
+                                </constraints>
+                                <state key="normal" image="Add"/>
+                                <connections>
+                                    <action selector="plusButtonTapped:" destination="BV1-FR-VrT" eventType="touchUpInside" id="u2M-gS-DrU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zao-DD-cf2">
+                                <rect key="frame" x="318" y="784" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="WNV-DT-AbW"/>
+                                    <constraint firstAttribute="height" constant="50" id="y6P-fe-bqN"/>
+                                </constraints>
+                                <state key="normal" image="Minus"/>
+                                <connections>
+                                    <action selector="minusButtonTapped:" destination="BV1-FR-VrT" eventType="touchUpInside" id="yq3-nb-TVB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZAk-68-0Pe">
+                                <rect key="frame" x="46" y="784" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="VjT-ib-OeB"/>
+                                    <constraint firstAttribute="width" constant="50" id="jub-gs-evk"/>
+                                </constraints>
+                                <state key="normal" image="Reset"/>
+                                <connections>
+                                    <action selector="placeScreenButtonTapped:" destination="BV1-FR-VrT" eventType="touchUpInside" id="LZw-yy-G9W"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="close" translatesAutoresizingMaskIntoConstraints="NO" id="aDx-dW-VYc">
+                                <rect key="frame" x="164" y="408" width="86" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="TOo-V8-amg" secondAttribute="trailing" id="0C9-1I-NOc"/>
+                            <constraint firstItem="TOo-V8-amg" firstAttribute="leading" secondItem="jmm-wr-hNL" secondAttribute="leading" id="3wh-88-dcD"/>
+                            <constraint firstItem="TOo-V8-amg" firstAttribute="top" secondItem="jmm-wr-hNL" secondAttribute="top" id="WN0-vt-KKD"/>
+                            <constraint firstItem="TOo-V8-amg" firstAttribute="leading" secondItem="jmm-wr-hNL" secondAttribute="leading" id="Xou-Gn-4Gj"/>
+                            <constraint firstItem="S4v-cr-zqm" firstAttribute="bottom" secondItem="zao-DD-cf2" secondAttribute="bottom" constant="28" id="aWC-7O-PuA"/>
+                            <constraint firstItem="S4v-cr-zqm" firstAttribute="bottom" secondItem="ZAk-68-0Pe" secondAttribute="bottom" constant="28" id="bUV-jk-COT"/>
+                            <constraint firstItem="S4v-cr-zqm" firstAttribute="bottom" secondItem="b2o-hP-Ncg" secondAttribute="bottom" constant="28" id="dAg-IC-b4k"/>
+                            <constraint firstItem="S4v-cr-zqm" firstAttribute="trailing" secondItem="zao-DD-cf2" secondAttribute="trailing" constant="46" id="fGs-c4-3Cc"/>
+                            <constraint firstItem="b2o-hP-Ncg" firstAttribute="centerX" secondItem="jmm-wr-hNL" secondAttribute="centerX" id="gQ6-i1-JvW"/>
+                            <constraint firstAttribute="bottom" secondItem="TOo-V8-amg" secondAttribute="bottom" id="o35-kh-qJ3"/>
+                            <constraint firstAttribute="trailing" secondItem="TOo-V8-amg" secondAttribute="trailing" id="wjj-8A-nhw"/>
+                            <constraint firstItem="ZAk-68-0Pe" firstAttribute="leading" secondItem="S4v-cr-zqm" secondAttribute="leading" constant="46" id="wsL-hs-WHb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="S4v-cr-zqm"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="TOo-V8-amg" id="Xve-SS-e5Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="122.54464285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Add" width="50" height="50"/>
+        <image name="Minus" width="50" height="50"/>
+        <image name="Reset" width="50" height="50"/>
+        <image name="close" width="512" height="512"/>
+    </resources>
+</document>

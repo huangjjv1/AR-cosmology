@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "35E50B8C-7311-46FC-A201-11D40366E3E3"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0FD91E80-B047-4397-BBCC-86C801B588B7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ARImageDetection/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "0FD91E80-B047-4397-BBCC-86C801B588B7 - fbef9732aafe302d"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AR_Detection_v1_0.ViewController.planetNode.getter : __C.SCNNode"
+                  moduleName = "AR Detection v1.0"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/everyonequal/Downloads/8.%20ARKit2/Final%20Project/ARImageDetection/ARImageDetection/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "144">
+               </Location>
+               <Location
+                  uuid = "0FD91E80-B047-4397-BBCC-86C801B588B7 - e86dab99c2f47845"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AR_Detection_v1_0.ViewController.planetNode.setter : __C.SCNNode"
+                  moduleName = "AR Detection v1.0"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/everyonequal/Downloads/8.%20ARKit2/Final%20Project/ARImageDetection/ARImageDetection/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "196">
+               </Location>
+               <Location
+                  uuid = "0FD91E80-B047-4397-BBCC-86C801B588B7 - bbffe8aa2a6d822b"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AR_Detection_v1_0.ViewController.planetNode.modify : __C.SCNNode"
+                  moduleName = "AR Detection v1.0"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/everyonequal/Downloads/8.%20ARKit2/Final%20Project/ARImageDetection/ARImageDetection/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "0FD91E80-B047-4397-BBCC-86C801B588B7 - a479635e24d51935"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AR_Detection_v1_0.ViewController.planetNode.modify : __C.SCNNode with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "AR Detection v1.0"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/everyonequal/Downloads/8.%20ARKit2/Final%20Project/ARImageDetection/ARImageDetection/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "0FD91E80-B047-4397-BBCC-86C801B588B7 - 6f4c9354ab81c093"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AR_Detection_v1_0.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; AR_Detection_v1_0.ViewController"
+                  moduleName = "AR Detection v1.0"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/everyonequal/Downloads/8.%20ARKit2/Final%20Project/ARImageDetection/ARImageDetection/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "156">
+               </Location>
+               <Location
+                  uuid = "0FD91E80-B047-4397-BBCC-86C801B588B7 - 2715a870fcfc4b75"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AR_Detection_v1_0.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;AR_Detection_v1_0.ViewController&gt;"
+                  moduleName = "AR Detection v1.0"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/everyonequal/Downloads/8.%20ARKit2/Final%20Project/ARImageDetection/ARImageDetection/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "104">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
