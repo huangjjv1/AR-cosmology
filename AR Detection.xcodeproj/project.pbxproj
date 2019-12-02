@@ -23,7 +23,6 @@
 		D7BDD39A238B39520087173B /* iPhoneX-red.sks in Resources */ = {isa = PBXBuildFile; fileRef = D7BDD399238B39520087173B /* iPhoneX-red.sks */; };
 		D7BDD39D238B3A200087173B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7BDD39C238B3A200087173B /* LaunchScreen.storyboard */; };
 		D7BDD39F238B3A610087173B /* target.png in Resources */ = {isa = PBXBuildFile; fileRef = D7BDD39E238B3A610087173B /* target.png */; };
-		DE9A1C3E23948B06001C8C24 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9A1C3D23948B06001C8C24 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,7 +44,6 @@
 		D7BDD399238B39520087173B /* iPhoneX-red.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "iPhoneX-red.sks"; sourceTree = "<group>"; };
 		D7BDD39C238B3A200087173B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7BDD39E238B3A610087173B /* target.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = target.png; sourceTree = "<group>"; };
-		DE9A1C3D23948B06001C8C24 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +78,6 @@
 			children = (
 				5C0E662D20F42B73005F9747 /* AppDelegate.swift */,
 				5C0E663120F42B73005F9747 /* ViewController.swift */,
-				DE9A1C3D23948B06001C8C24 /* DetailViewController.swift */,
 				D7346BA2238BEA8000169702 /* FocusSquare.swift */,
 				5C0E663620F42B76005F9747 /* Assets.xcassets */,
 				5C0E662F20F42B73005F9747 /* art.scnassets */,
@@ -193,7 +190,6 @@
 				5C0E663220F42B73005F9747 /* ViewController.swift in Sources */,
 				D7346BA3238BEA8000169702 /* FocusSquare.swift in Sources */,
 				5C0E662E20F42B73005F9747 /* AppDelegate.swift in Sources */,
-				DE9A1C3E23948B06001C8C24 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,13 +326,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = X34TAZZQJ3;
+				DEVELOPMENT_TEAM = 8K22N87H8L;
 				INFOPLIST_FILE = ARImageDetection/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.design.io.23;
+				PRODUCT_BUNDLE_IDENTIFIER = io.design.io.123;
 				PRODUCT_NAME = "AR Detection v1.0";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -348,13 +344,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = X34TAZZQJ3;
+				DEVELOPMENT_TEAM = 8K22N87H8L;
 				INFOPLIST_FILE = ARImageDetection/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.design.io.23;
+				PRODUCT_BUNDLE_IDENTIFIER = io.design.io.123;
 				PRODUCT_NAME = "AR Detection v1.0";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
