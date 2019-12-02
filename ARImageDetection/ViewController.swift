@@ -17,6 +17,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     var targetName = String()
     var currentAnchorName = String()
     
+    
     func giveClues(text:String,title:String) {
         let alert = UIAlertController(title: "Clues Box", message: "这是一个弹窗", preferredStyle: .alert)
 //        let cancel = UIAlertAction(title: "Retuen", style: .cancel, handler: nil)
@@ -47,6 +48,11 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         if segue.identifier == "HomeToDetail" {
             let toViewController = segue.destination as! DetailViewController
             toViewController.nodeName = nodeName
+        }
+        
+        if segue.identifier == "HomeToHint" {
+            let toViewController = segue.destination as! HintViewController
+            toViewController.nodeName = targetName
         }
     }
     //    var focusSquare: FocusSquare?
@@ -123,6 +129,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         sceneView.debugOptions = [ARSCNDebugOptions.showWorldOrigin,ARSCNDebugOptions.showFeaturePoints]
         self.userScore = 0
         self.scoreLabel.alpha = 0
+        self.targetName = ""
+        self.nodeName = ""
         // Create a new scene
 //        let scene = SCNScene(named: "art.scnassets/ship.scn")!
         
