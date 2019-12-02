@@ -16,6 +16,15 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     var targetNumber = 1
     var targetName = String()
     var currentAnchorName = String()
+    @IBAction func reRecongnize(_ sender: Any) {
+        let configuration = ARImageTrackingConfiguration()
+        guard let referenceImages = ARReferenceImage.referenceImages(inGroupNamed: "AR Resources", bundle: Bundle.main) else { return }
+        configuration.trackingImages = referenceImages
+        configuration.maximumNumberOfTrackedImages = 1
+        sceneView.session.pause()
+        sceneView.session.run(configuration)
+        
+    }
     
     @IBOutlet weak var scoreLabel: UILabel!
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -48,12 +57,6 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     }
     @IBOutlet var sceneView: ARSCNView!
     @IBAction func placeScreenButtonTapped(_ sender: UIButton) {
-//        let configuration = ARImageTrackingConfiguration()
-//        guard let referenceImages = ARReferenceImage.referenceImages(inGroupNamed: "AR Resources", bundle: Bundle.main) else { return }
-//        configuration.trackingImages = referenceImages
-//        configuration.maximumNumberOfTrackedImages = 1
-//        sceneView.session.pause()
-//        sceneView.session.run(configuration)
 //        let anchors = sceneView.session.currentFrame!.anchors
 //            print(anchors)
 //            for anchor in anchors {
@@ -128,7 +131,6 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 
     // Override to create and configure nodes for anchors added to the view's session.
     func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> (SCNNode?) {
-
         let name = anchor.name!
         currentAnchorName = name
         var node:SCNNode
