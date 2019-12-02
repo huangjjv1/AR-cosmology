@@ -1,2 +1,2 @@
 # AR cosmology
- Jin
+Team member: Jin Wang Han Zeng
