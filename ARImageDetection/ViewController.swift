@@ -12,15 +12,7 @@ import ARKit
 
 class ViewController: UIViewController, ARSCNViewDelegate {
     var planetNode=SCNNode()
-    var nodeName: String!
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "HomeToDetail" {
-            let toViewController = segue.destination as! DetailViewController
-            toViewController.nodeName = nodeName
-        }
-    }
-    //    var focusSquare: FocusSquare?
+//    var focusSquare: FocusSquare?
     @IBOutlet var sceneView: ARSCNView!
     @IBAction func placeScreenButtonTapped(_ sender: UIButton) {
         let configuration = ARImageTrackingConfiguration()
@@ -85,7 +77,6 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         (node,iPhoneNode) = spawningmodel(name: name)
         planetNode = iPhoneNode
         print(name)
-        nodeName = name
 //        guard focusSquare == nil else {
 //            return
 //        }
