@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="AR_Detection_v2_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jmm-wr-hNL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TOo-V8-amg">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2o-hP-Ncg">
+                                <rect key="frame" x="182" y="784" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="MOT-jK-wJo"/>
+                                    <constraint firstAttribute="width" constant="50" id="Ni9-Y1-46G"/>
+                                </constraints>
+                                <state key="normal" image="Add"/>
+                                <connections>
+                                    <action selector="plusButtonTapped:" destination="BV1-FR-VrT" eventType="touchUpInside" id="u2M-gS-DrU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zao-DD-cf2">
+                                <rect key="frame" x="318" y="784" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="WNV-DT-AbW"/>
+                                    <constraint firstAttribute="height" constant="50" id="y6P-fe-bqN"/>
+                                </constraints>
+                                <state key="normal" image="Minus"/>
+                                <connections>
+                                    <action selector="minusButtonTapped:" destination="BV1-FR-VrT" eventType="touchUpInside" id="yq3-nb-TVB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZAk-68-0Pe">
+                                <rect key="frame" x="46" y="784" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="VjT-ib-OeB"/>
+                                    <constraint firstAttribute="width" constant="50" id="jub-gs-evk"/>
+                                </constraints>
+                                <state key="normal" image="open"/>
+                                <connections>
+                                    <action selector="placeScreenButtonTapped:" destination="BV1-FR-VrT" eventType="touchUpInside" id="LZw-yy-G9W"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="close" translatesAutoresizingMaskIntoConstraints="NO" id="aDx-dW-VYc">
+                                <rect key="frame" x="164" y="408" width="86" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w7x-aj-S81">
+                                <rect key="frame" x="318" y="74" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="6aZ-Mg-aYy"/>
+                                    <constraint firstAttribute="width" constant="50" id="nXb-Jd-Csg"/>
+                                </constraints>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" image="magnifyingglass" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
+                                </state>
+                                <connections>
+                                    <segue destination="uzv-1B-s62" kind="presentation" identifier="HomeToDetail" destinationCreationSelector="detailButtonTapped:" id="E1k-hT-YfE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ukG-eK-le5">
+                                <rect key="frame" x="177" y="78" width="61" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K8l-Xg-bOa">
+                                <rect key="frame" x="87" y="710" width="241" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="GameStart/End">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="gameStart:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Oel-BB-Y5B"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="TOo-V8-amg" secondAttribute="trailing" id="0C9-1I-NOc"/>
+                            <constraint firstItem="TOo-V8-amg" firstAttribute="leading" secondItem="jmm-wr-hNL" secondAttribute="leading" id="3wh-88-dcD"/>
+                            <constraint firstItem="TOo-V8-amg" firstAttribute="top" secondItem="jmm-wr-hNL" secondAttribute="top" id="WN0-vt-KKD"/>
+                            <constraint firstItem="TOo-V8-amg" firstAttribute="leading" secondItem="jmm-wr-hNL" secondAttribute="leading" id="Xou-Gn-4Gj"/>
+                            <constraint firstItem="S4v-cr-zqm" firstAttribute="bottom" secondItem="zao-DD-cf2" secondAttribute="bottom" constant="28" id="aWC-7O-PuA"/>
+                            <constraint firstItem="S4v-cr-zqm" firstAttribute="bottom" secondItem="ZAk-68-0Pe" secondAttribute="bottom" constant="28" id="bUV-jk-COT"/>
+                            <constraint firstItem="S4v-cr-zqm" firstAttribute="trailing" secondItem="w7x-aj-S81" secondAttribute="trailing" constant="46" id="d3G-li-IR2"/>
+                            <constraint firstItem="S4v-cr-zqm" firstAttribute="bottom" secondItem="b2o-hP-Ncg" secondAttribute="bottom" constant="28" id="dAg-IC-b4k"/>
+                            <constraint firstItem="S4v-cr-zqm" firstAttribute="trailing" secondItem="zao-DD-cf2" secondAttribute="trailing" constant="46" id="fGs-c4-3Cc"/>
+                            <constraint firstItem="b2o-hP-Ncg" firstAttribute="centerX" secondItem="jmm-wr-hNL" secondAttribute="centerX" id="gQ6-i1-JvW"/>
+                            <constraint firstItem="w7x-aj-S81" firstAttribute="top" secondItem="S4v-cr-zqm" secondAttribute="top" constant="30" id="l5Z-01-aVi"/>
+                            <constraint firstAttribute="bottom" secondItem="TOo-V8-amg" secondAttribute="bottom" id="o35-kh-qJ3"/>
+                            <constraint firstAttribute="trailing" secondItem="TOo-V8-amg" secondAttribute="trailing" id="wjj-8A-nhw"/>
+                            <constraint firstItem="ZAk-68-0Pe" firstAttribute="leading" secondItem="S4v-cr-zqm" secondAttribute="leading" constant="46" id="wsL-hs-WHb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="S4v-cr-zqm"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="TOo-V8-amg" id="Xve-SS-e5Z"/>
+                        <outlet property="scoreLabel" destination="ukG-eK-le5" id="B8d-qc-XzE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="122.54464285714285"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="XxM-tW-vzK">
+            <objects>
+                <viewController id="uzv-1B-s62" customClass="DetailViewController" customModule="AR_Detection_v2_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="idF-Oi-nCM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detail of the model" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0i3-v7-BYA">
+                                <rect key="frame" x="67" y="77" width="280.33333333333331" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="aFs-Qe-Hij"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Nm-JM-yAX">
+                                <rect key="frame" x="50" y="167" width="314" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Nt7-Vn-VWf"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWO-T6-hrV">
+                                <rect key="frame" x="344" y="20" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="1pt-mq-SVq"/>
+                                    <constraint firstAttribute="height" constant="50" id="ClH-ct-Arc"/>
+                                </constraints>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" image="xmark.circle" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeButtonTapped:" destination="uzv-1B-s62" eventType="touchUpInside" id="bbg-PH-7TY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gtq-DV-OJH">
+                                <rect key="frame" x="35" y="431" width="344" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="dWO-T6-hrV" firstAttribute="top" secondItem="MSh-cl-ZX3" secondAttribute="top" constant="20" id="4Gj-B8-W7v"/>
+                            <constraint firstItem="MSh-cl-ZX3" firstAttribute="trailing" secondItem="dWO-T6-hrV" secondAttribute="trailing" constant="20" id="Hyi-yY-fSO"/>
+                            <constraint firstItem="5Nm-JM-yAX" firstAttribute="top" secondItem="0i3-v7-BYA" secondAttribute="bottom" constant="50" id="aYs-Xt-KAA"/>
+                            <constraint firstItem="0i3-v7-BYA" firstAttribute="top" secondItem="idF-Oi-nCM" secondAttribute="topMargin" constant="77" id="aeT-fy-Ki9"/>
+                            <constraint firstItem="5Nm-JM-yAX" firstAttribute="leading" secondItem="MSh-cl-ZX3" secondAttribute="leading" constant="50" id="c7k-06-mlQ"/>
+                            <constraint firstItem="0i3-v7-BYA" firstAttribute="centerX" secondItem="idF-Oi-nCM" secondAttribute="centerX" id="mZX-C8-zyW"/>
+                            <constraint firstItem="MSh-cl-ZX3" firstAttribute="trailing" secondItem="5Nm-JM-yAX" secondAttribute="trailing" constant="50" id="w4y-GY-P51"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MSh-cl-ZX3"/>
+                    </view>
+                    <connections>
+                        <outlet property="contentLabel" destination="Gtq-DV-OJH" id="WY7-Cz-Tuf"/>
+                        <outlet property="imageLabel" destination="5Nm-JM-yAX" id="wF5-hp-kfb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KGu-Ml-Z7D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="844.92753623188412" y="122.54464285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Add" width="50" height="50"/>
+        <image name="Minus" width="50" height="50"/>
+        <image name="close" width="512" height="512"/>
+        <image name="magnifyingglass" catalog="system" width="64" height="56"/>
+        <image name="open" width="512" height="512"/>
+        <image name="xmark.circle" catalog="system" width="64" height="60"/>
+    </resources>
+</document>
