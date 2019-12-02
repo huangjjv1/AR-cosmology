@@ -27,7 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5C0E662A20F42B73005F9747 /* AR Detection v1.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR Detection v1.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C0E662A20F42B73005F9747 /* AR Detection v2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR Detection v2.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C0E662D20F42B73005F9747 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C0E662F20F42B73005F9747 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		5C0E663120F42B73005F9747 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 		5C0E662B20F42B73005F9747 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5C0E662A20F42B73005F9747 /* AR Detection v1.0.app */,
+				5C0E662A20F42B73005F9747 /* AR Detection v2.0.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,7 +126,7 @@
 			);
 			name = "AR Detection";
 			productName = ARImageDetection;
-			productReference = 5C0E662A20F42B73005F9747 /* AR Detection v1.0.app */;
+			productReference = 5C0E662A20F42B73005F9747 /* AR Detection v2.0.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -330,14 +330,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = X34TAZZQJ3;
+				DEVELOPMENT_TEAM = 8K22N87H8L;
 				INFOPLIST_FILE = ARImageDetection/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.design.io.23;
-				PRODUCT_NAME = "AR Detection v1.0";
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.design.io.23-";
+				PRODUCT_NAME = "AR Detection v2.0";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -348,14 +349,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = X34TAZZQJ3;
+				DEVELOPMENT_TEAM = 8K22N87H8L;
 				INFOPLIST_FILE = ARImageDetection/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.design.io.23;
-				PRODUCT_NAME = "AR Detection v1.0";
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.design.io.23-";
+				PRODUCT_NAME = "AR Detection v2.0";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="AR_Detection_v1_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="AR_Detection_v2_0" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jmm-wr-hNL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -47,7 +47,7 @@
                                     <constraint firstAttribute="height" constant="50" id="VjT-ib-OeB"/>
                                     <constraint firstAttribute="width" constant="50" id="jub-gs-evk"/>
                                 </constraints>
-                                <state key="normal" image="Reset"/>
+                                <state key="normal" image="open"/>
                                 <connections>
                                     <action selector="placeScreenButtonTapped:" destination="BV1-FR-VrT" eventType="touchUpInside" id="LZw-yy-G9W"/>
                                 </connections>
@@ -56,11 +56,6 @@
                                 <rect key="frame" x="164" y="408" width="86" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K8l-Xg-bOa">
-                                <rect key="frame" x="46" y="74" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w7x-aj-S81">
                                 <rect key="frame" x="318" y="74" width="50" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -74,6 +69,24 @@
                                 </state>
                                 <connections>
                                     <segue destination="uzv-1B-s62" kind="presentation" identifier="HomeToDetail" destinationCreationSelector="detailButtonTapped:" id="E1k-hT-YfE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ukG-eK-le5">
+                                <rect key="frame" x="177" y="78" width="61" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K8l-Xg-bOa">
+                                <rect key="frame" x="87" y="710" width="241" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="GameStart/End">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="gameStart:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Oel-BB-Y5B"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -98,6 +111,7 @@
                     </view>
                     <connections>
                         <outlet property="sceneView" destination="TOo-V8-amg" id="Xve-SS-e5Z"/>
+                        <outlet property="scoreLabel" destination="ukG-eK-le5" id="B8d-qc-XzE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
@@ -107,7 +121,7 @@
         <!--Detail View Controller-->
         <scene sceneID="XxM-tW-vzK">
             <objects>
-                <viewController id="uzv-1B-s62" customClass="DetailViewController" customModule="AR_Detection_v1_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="uzv-1B-s62" customClass="DetailViewController" customModule="AR_Detection_v2_0" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="idF-Oi-nCM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -174,9 +188,9 @@
     <resources>
         <image name="Add" width="50" height="50"/>
         <image name="Minus" width="50" height="50"/>
-        <image name="Reset" width="50" height="50"/>
         <image name="close" width="512" height="512"/>
         <image name="magnifyingglass" catalog="system" width="64" height="56"/>
+        <image name="open" width="512" height="512"/>
         <image name="xmark.circle" catalog="system" width="64" height="60"/>
     </resources>
 </document>
