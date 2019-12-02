@@ -16,9 +16,24 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     var targetNumber = 1
     var targetName = String()
     var currentAnchorName = String()
+    
+    func giveClues(text:String,title:String) {
+        let alert = UIAlertController(title: "Clues Box", message: "这是一个弹窗", preferredStyle: .alert)
+//        let cancel = UIAlertAction(title: "Retuen", style: .cancel, handler: nil)
+        let ok = UIAlertAction(title: "Got it", style: .default, handler: {
+            ACTION in
+            print("Got it!")
+        })
+        alert.addAction(ok)
+        let textPrint = text
+        alert.message = textPrint
+        alert.title = title
+        present(alert, animated: true, completion: nil)
+    }
+    
     @IBAction func reRecongnize(_ sender: Any) {
         viewWillDisappear(true)
-        var anchors_all = sceneView.session.currentFrame!.anchors
+        let anchors_all = sceneView.session.currentFrame!.anchors
         for anchor in anchors_all {
             sceneView.session.remove(anchor: anchor)
         }
@@ -39,7 +54,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
            didSet {
                // ensure UI update runs on main thread
                DispatchQueue.main.async {
-                   self.scoreLabel.text = String(self.userScore)
+                   self.scoreLabel.text = "Your current score:" + String(self.userScore)
                }
            }
        }
@@ -49,10 +64,14 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             self.scoreLabel.alpha = 100
             targetNumber = Int(arc4random() % 6 + 1)
             targetName = "target" + String(targetNumber)
+            let text = "Please find the first target:" + targetName + "\nHere are some Clues ..."
+            giveClues(text: text,title:"Game Start!")
             print("Please find the first target:",targetName)
         }else{
             self.scoreLabel.alpha = 0
             self.userScore = 0
+            let text = "Game ends. Thank you!"
+            giveClues(text: text,title:"Game Over")
             print("Game ends. Thank you!")
         }
     }
@@ -76,8 +95,12 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             print("bingo! right!")
             targetNumber = Int(arc4random() % 6 + 1)
             targetName = "target" + String(targetNumber)
+            let text = "Please find the next target:" + targetName + "\nHere are some Clues ...\nOr press the game button to quit"
+            giveClues(text: text,title:"You are right!")
             print("Please find the next:",targetName)
         }else{
+            let text = "present target is :" + currentAnchorName + ", please go on to find" + targetName
+            giveClues(text: text,title:"Not this one :)")
             print("present target is :",currentAnchorName)
             print("Not this one, please go on!, to find:",targetName)
         }
