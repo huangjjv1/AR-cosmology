@@ -20,6 +20,8 @@ class DetailViewController: UIViewController {
         imageLabel.image = UIImage(named: "art.scnassets/Targets/" + nodeName + ".png")
         if (nodeName == "") {
             contentLabel.text = ""
+        } else {
+            contentLabel.text = "This is" + nodeName
         }
         
     }
