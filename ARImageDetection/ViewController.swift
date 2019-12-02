@@ -17,12 +17,13 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     var targetName = String()
     var currentAnchorName = String()
     @IBAction func reRecongnize(_ sender: Any) {
-        let configuration = ARImageTrackingConfiguration()
-        guard let referenceImages = ARReferenceImage.referenceImages(inGroupNamed: "AR Resources", bundle: Bundle.main) else { return }
-        configuration.trackingImages = referenceImages
-        configuration.maximumNumberOfTrackedImages = 1
-        sceneView.session.pause()
-        sceneView.session.run(configuration)
+        viewWillDisappear(true)
+        var anchors_all = sceneView.session.currentFrame!.anchors
+        for anchor in anchors_all {
+            sceneView.session.remove(anchor: anchor)
+        }
+        print(sceneView.session.currentFrame!.anchors)
+        viewWillAppear(true)
         
     }
     
@@ -69,6 +70,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 //        }
         
 //        let name = anchors.last?.name
+        currentAnchorName = sceneView.session.currentFrame!.anchors.last!.name!
         if currentAnchorName == targetName {
             self.userScore += 1
             print("bingo! right!")
