@@ -147,9 +147,9 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 //        sceneView.scene.rootNode.addChildNode(focusSquareLocal)
 //        focusSquare = focusSquareLocal
         let anchors = sceneView.session.currentFrame!.anchors
-        for anchor in anchors {
-            sceneView.session.remove(anchor: anchor)
-        }
+            for anchor in anchors {
+                sceneView.session.remove(anchor: anchor)
+            }
         return node
     }
     func spawningmodel(name:String)->(SCNNode,SCNNode){
