@@ -52,10 +52,6 @@
                                     <action selector="placeScreenButtonTapped:" destination="BV1-FR-VrT" eventType="touchUpInside" id="LZw-yy-G9W"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="close" translatesAutoresizingMaskIntoConstraints="NO" id="aDx-dW-VYc">
-                                <rect key="frame" x="164" y="408" width="86" height="81"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w7x-aj-S81">
                                 <rect key="frame" x="318" y="74" width="50" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -89,14 +85,29 @@
                                     <action selector="gameStart:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Oel-BB-Y5B"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0C8-B3-OK5">
+                                <rect key="frame" x="160" y="401" width="94" height="94"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="94" id="3vh-tL-Fqt"/>
+                                    <constraint firstAttribute="height" constant="94" id="oO9-Ec-IrR"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="close"/>
+                                <connections>
+                                    <action selector="reRecongnize:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Pm6-2P-PHL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="TOo-V8-amg" secondAttribute="trailing" id="0C9-1I-NOc"/>
                             <constraint firstItem="TOo-V8-amg" firstAttribute="leading" secondItem="jmm-wr-hNL" secondAttribute="leading" id="3wh-88-dcD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0C8-B3-OK5" secondAttribute="trailing" constant="140" id="Brb-Yt-TeW"/>
+                            <constraint firstItem="0C8-B3-OK5" firstAttribute="leading" secondItem="jmm-wr-hNL" secondAttribute="leadingMargin" constant="140" id="TMz-R5-Hae"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="0C8-B3-OK5" secondAttribute="bottom" constant="367" id="Te9-C1-WrJ"/>
                             <constraint firstItem="TOo-V8-amg" firstAttribute="top" secondItem="jmm-wr-hNL" secondAttribute="top" id="WN0-vt-KKD"/>
                             <constraint firstItem="TOo-V8-amg" firstAttribute="leading" secondItem="jmm-wr-hNL" secondAttribute="leading" id="Xou-Gn-4Gj"/>
                             <constraint firstItem="S4v-cr-zqm" firstAttribute="bottom" secondItem="zao-DD-cf2" secondAttribute="bottom" constant="28" id="aWC-7O-PuA"/>
+                            <constraint firstItem="0C8-B3-OK5" firstAttribute="top" secondItem="jmm-wr-hNL" secondAttribute="topMargin" constant="357" id="bKd-2a-syn"/>
                             <constraint firstItem="S4v-cr-zqm" firstAttribute="bottom" secondItem="ZAk-68-0Pe" secondAttribute="bottom" constant="28" id="bUV-jk-COT"/>
                             <constraint firstItem="S4v-cr-zqm" firstAttribute="trailing" secondItem="w7x-aj-S81" secondAttribute="trailing" constant="46" id="d3G-li-IR2"/>
                             <constraint firstItem="S4v-cr-zqm" firstAttribute="bottom" secondItem="b2o-hP-Ncg" secondAttribute="bottom" constant="28" id="dAg-IC-b4k"/>
