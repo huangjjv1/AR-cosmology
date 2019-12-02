@@ -56,11 +56,6 @@
                                 <rect key="frame" x="164" y="408" width="86" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K8l-Xg-bOa">
-                                <rect key="frame" x="46" y="74" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w7x-aj-S81">
                                 <rect key="frame" x="318" y="74" width="50" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -76,11 +71,24 @@
                                     <segue destination="uzv-1B-s62" kind="presentation" identifier="HomeToDetail" destinationCreationSelector="detailButtonTapped:" id="E1k-hT-YfE"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K8l-Xg-bOa">
+                                <rect key="frame" x="46" y="74" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="vyt-Da-A1M"/>
+                                    <constraint firstAttribute="width" constant="50" id="yz8-qD-Wm1"/>
+                                </constraints>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" image="map" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="TOo-V8-amg" secondAttribute="trailing" id="0C9-1I-NOc"/>
                             <constraint firstItem="TOo-V8-amg" firstAttribute="leading" secondItem="jmm-wr-hNL" secondAttribute="leading" id="3wh-88-dcD"/>
+                            <constraint firstItem="K8l-Xg-bOa" firstAttribute="top" secondItem="S4v-cr-zqm" secondAttribute="top" constant="30" id="7bl-gi-gMv"/>
                             <constraint firstItem="TOo-V8-amg" firstAttribute="top" secondItem="jmm-wr-hNL" secondAttribute="top" id="WN0-vt-KKD"/>
                             <constraint firstItem="TOo-V8-amg" firstAttribute="leading" secondItem="jmm-wr-hNL" secondAttribute="leading" id="Xou-Gn-4Gj"/>
                             <constraint firstItem="S4v-cr-zqm" firstAttribute="bottom" secondItem="zao-DD-cf2" secondAttribute="bottom" constant="28" id="aWC-7O-PuA"/>
@@ -90,6 +98,7 @@
                             <constraint firstItem="S4v-cr-zqm" firstAttribute="trailing" secondItem="zao-DD-cf2" secondAttribute="trailing" constant="46" id="fGs-c4-3Cc"/>
                             <constraint firstItem="b2o-hP-Ncg" firstAttribute="centerX" secondItem="jmm-wr-hNL" secondAttribute="centerX" id="gQ6-i1-JvW"/>
                             <constraint firstItem="w7x-aj-S81" firstAttribute="top" secondItem="S4v-cr-zqm" secondAttribute="top" constant="30" id="l5Z-01-aVi"/>
+                            <constraint firstItem="K8l-Xg-bOa" firstAttribute="leading" secondItem="S4v-cr-zqm" secondAttribute="leading" constant="46" id="lWE-Q2-YMZ"/>
                             <constraint firstAttribute="bottom" secondItem="TOo-V8-amg" secondAttribute="bottom" id="o35-kh-qJ3"/>
                             <constraint firstAttribute="trailing" secondItem="TOo-V8-amg" secondAttribute="trailing" id="wjj-8A-nhw"/>
                             <constraint firstItem="ZAk-68-0Pe" firstAttribute="leading" secondItem="S4v-cr-zqm" secondAttribute="leading" constant="46" id="wsL-hs-WHb"/>
@@ -177,6 +186,7 @@
         <image name="Reset" width="50" height="50"/>
         <image name="close" width="512" height="512"/>
         <image name="magnifyingglass" catalog="system" width="64" height="56"/>
+        <image name="map" catalog="system" width="64" height="56"/>
         <image name="xmark.circle" catalog="system" width="64" height="60"/>
     </resources>
 </document>
