@@ -75,10 +75,10 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             print("Please find the first target:",targetName)
         }else{
             self.scoreLabel.alpha = 0
-            self.userScore = 0
-            let text = "Game ends. Thank you!"
+            let text = "Good game, your total score is: \(self.userScore). \nThank you!"
             giveClues(text: text,title:"Game Over")
-            print("Game ends. Thank you!")
+            print("Game ends, your total score:\(self.userScore). \nThank you!")
+            self.userScore = 0
         }
     }
     @IBOutlet var sceneView: ARSCNView!
@@ -95,8 +95,10 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 //        }
         
 //        let name = anchors.last?.name
-        currentAnchorName = sceneView.session.currentFrame!.anchors.last!.name!
-        if currentAnchorName == targetName {
+        if self.scoreLabel.alpha == 100{
+            currentAnchorName = sceneView.session.currentFrame!.anchors.last!.name!
+        }
+        if currentAnchorName == targetName && self.scoreLabel.alpha == 100 {
             self.userScore += 1
             print("bingo! right!")
             targetNumber = Int(arc4random() % 6 + 1)
@@ -104,11 +106,13 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             let text = "Please find the next target:" + targetName + "\nHere are some Clues ...\nOr press the game button to quit"
             giveClues(text: text,title:"You are right!")
             print("Please find the next:",targetName)
-        }else{
+        }else if currentAnchorName != targetName && self.scoreLabel.alpha == 100{
             let text = "present target is :" + currentAnchorName + ", please go on to find" + targetName
             giveClues(text: text,title:"Not this one :)")
             print("present target is :",currentAnchorName)
             print("Not this one, please go on!, to find:",targetName)
+        }else{
+            return
         }
     }
     @IBAction func plusButtonTapped(_ sender: UIButton) {
@@ -166,6 +170,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> (SCNNode?) {
         let name = anchor.name!
         currentAnchorName = name
+        nodeName = name
         var node:SCNNode
         var iPhoneNode = SCNNode()
         (node,iPhoneNode) = spawningmodel(name: name)
