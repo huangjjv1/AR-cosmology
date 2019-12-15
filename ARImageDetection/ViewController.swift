@@ -42,16 +42,22 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         viewWillAppear(true)
         
     }
-    
+
     @IBOutlet weak var scoreLabel: UILabel!
+    
+// the function for jump to the other page and control which paramater will be sent to other view pages
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "HomeToDetail" {
+// decide which controller will be the next controller(for this one, the controller is DetailViewController)
             let toViewController = segue.destination as! DetailViewController
+// pass the nodeName to other page
             toViewController.nodeName = nodeName
         }
         
         if segue.identifier == "HomeToHint" {
+// decide which controller will be the next controller(for this one, the controller is HintViewController)
             let toViewController = segue.destination as! HintViewController
+// pass the nodeName to other page
             toViewController.nodeName = targetName
         }
     }
