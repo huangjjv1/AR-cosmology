@@ -3,7 +3,6 @@
 //  AR Detection
 //
 //  Created by Jin on 2019/11/25.
-//  Copyright © 2019 Willie Yam. All rights reserved.
 //
 
 import SceneKit
