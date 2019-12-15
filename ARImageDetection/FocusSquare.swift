@@ -4,7 +4,8 @@
 //
 //  Created by Jin on 2019/11/25.
 //
-
+// this was supposed to display a dynamic square in the middle of the sreen, but actually we don't have to use it
+// We use a static button instead to refresh the screen. We leave it here just in case we need a dynamic verion in the future.
 import SceneKit
 
 class FocusSquare :SCNNode{
