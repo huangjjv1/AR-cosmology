@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  ARImageDetection
 //
-//  Created by Willie Yam on 2018-07-09.
-//  Copyright © 2018 Willie Yam. All rights reserved.
+//  Created by ARgroup on 2019-10-09.
+//  Copyright © 2019 ARgroup. All rights reserved.
 //
 
 import UIKit
