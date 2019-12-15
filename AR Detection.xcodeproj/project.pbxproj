@@ -12,6 +12,17 @@
 		5C0E663220F42B73005F9747 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0E663120F42B73005F9747 /* ViewController.swift */; };
 		5C0E663520F42B73005F9747 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C0E663320F42B73005F9747 /* Main.storyboard */; };
 		5C0E663720F42B76005F9747 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C0E663620F42B76005F9747 /* Assets.xcassets */; };
+		8844319923A683D1006BA59B /* target7.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8844319823A683D1006BA59B /* target7.sks */; };
+		8844319B23A6858E006BA59B /* target8.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8844319A23A6858E006BA59B /* target8.sks */; };
+		884431A523A685AE006BA59B /* target14.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8844319C23A685AE006BA59B /* target14.sks */; };
+		884431A623A685AE006BA59B /* target11.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8844319D23A685AE006BA59B /* target11.sks */; };
+		884431A723A685AE006BA59B /* target13.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8844319E23A685AE006BA59B /* target13.sks */; };
+		884431A823A685AE006BA59B /* target9.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8844319F23A685AE006BA59B /* target9.sks */; };
+		884431A923A685AE006BA59B /* target15.sks in Resources */ = {isa = PBXBuildFile; fileRef = 884431A023A685AE006BA59B /* target15.sks */; };
+		884431AA23A685AE006BA59B /* target12.sks in Resources */ = {isa = PBXBuildFile; fileRef = 884431A123A685AE006BA59B /* target12.sks */; };
+		884431AB23A685AE006BA59B /* target17.sks in Resources */ = {isa = PBXBuildFile; fileRef = 884431A223A685AE006BA59B /* target17.sks */; };
+		884431AC23A685AE006BA59B /* target16.sks in Resources */ = {isa = PBXBuildFile; fileRef = 884431A323A685AE006BA59B /* target16.sks */; };
+		884431AD23A685AE006BA59B /* target10.sks in Resources */ = {isa = PBXBuildFile; fileRef = 884431A423A685AE006BA59B /* target10.sks */; };
 		D7346B91238B409800169702 /* target1.sks in Resources */ = {isa = PBXBuildFile; fileRef = D7346B90238B409700169702 /* target1.sks */; };
 		D7346B94238B413900169702 /* target2.sks in Resources */ = {isa = PBXBuildFile; fileRef = D7346B93238B413900169702 /* target2.sks */; };
 		D7346B98238B417D00169702 /* target3.sks in Resources */ = {isa = PBXBuildFile; fileRef = D7346B97238B417D00169702 /* target3.sks */; };
@@ -35,6 +46,17 @@
 		5C0E663420F42B73005F9747 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5C0E663620F42B76005F9747 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C0E663B20F42B76005F9747 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8844319823A683D1006BA59B /* target7.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = target7.sks; sourceTree = "<group>"; };
+		8844319A23A6858E006BA59B /* target8.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = target8.sks; sourceTree = "<group>"; };
+		8844319C23A685AE006BA59B /* target14.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = target14.sks; sourceTree = "<group>"; };
+		8844319D23A685AE006BA59B /* target11.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = target11.sks; sourceTree = "<group>"; };
+		8844319E23A685AE006BA59B /* target13.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = target13.sks; sourceTree = "<group>"; };
+		8844319F23A685AE006BA59B /* target9.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = target9.sks; sourceTree = "<group>"; };
+		884431A023A685AE006BA59B /* target15.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = target15.sks; sourceTree = "<group>"; };
+		884431A123A685AE006BA59B /* target12.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = target12.sks; sourceTree = "<group>"; };
+		884431A223A685AE006BA59B /* target17.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = target17.sks; sourceTree = "<group>"; };
+		884431A323A685AE006BA59B /* target16.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = target16.sks; sourceTree = "<group>"; };
+		884431A423A685AE006BA59B /* target10.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = target10.sks; sourceTree = "<group>"; };
 		D7346B90238B409700169702 /* target1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = target1.sks; sourceTree = "<group>"; };
 		D7346B93238B413900169702 /* target2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = target2.sks; sourceTree = "<group>"; };
 		D7346B97238B417D00169702 /* target3.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = target3.sks; sourceTree = "<group>"; };
@@ -106,6 +128,17 @@
 				D7346B99238B418900169702 /* target4.sks */,
 				D7346B9B238B419700169702 /* target5.sks */,
 				D7346B9D238B41A300169702 /* target6.sks */,
+				8844319823A683D1006BA59B /* target7.sks */,
+				8844319A23A6858E006BA59B /* target8.sks */,
+				8844319F23A685AE006BA59B /* target9.sks */,
+				884431A423A685AE006BA59B /* target10.sks */,
+				8844319D23A685AE006BA59B /* target11.sks */,
+				884431A123A685AE006BA59B /* target12.sks */,
+				8844319E23A685AE006BA59B /* target13.sks */,
+				8844319C23A685AE006BA59B /* target14.sks */,
+				884431A023A685AE006BA59B /* target15.sks */,
+				884431A323A685AE006BA59B /* target16.sks */,
+				884431A223A685AE006BA59B /* target17.sks */,
 				D7346B9F238B429D00169702 /* ball.sks */,
 			);
 			name = SKS;
@@ -173,13 +206,24 @@
 				5C0E663020F42B73005F9747 /* art.scnassets in Resources */,
 				5C0E663720F42B76005F9747 /* Assets.xcassets in Resources */,
 				D7346B9A238B418900169702 /* target4.sks in Resources */,
+				884431A623A685AE006BA59B /* target11.sks in Resources */,
+				884431A923A685AE006BA59B /* target15.sks in Resources */,
 				D7346BA0238B429D00169702 /* ball.sks in Resources */,
 				D7346B9E238B41A300169702 /* target6.sks in Resources */,
 				D7BDD39F238B3A610087173B /* target.png in Resources */,
+				884431AC23A685AE006BA59B /* target16.sks in Resources */,
+				884431A823A685AE006BA59B /* target9.sks in Resources */,
 				D7346BA1238B5CA400169702 /* target5.sks in Resources */,
+				884431A523A685AE006BA59B /* target14.sks in Resources */,
 				D7346B98238B417D00169702 /* target3.sks in Resources */,
+				884431A723A685AE006BA59B /* target13.sks in Resources */,
+				884431AA23A685AE006BA59B /* target12.sks in Resources */,
 				D7BDD39D238B3A200087173B /* LaunchScreen.storyboard in Resources */,
 				D7346B94238B413900169702 /* target2.sks in Resources */,
+				8844319923A683D1006BA59B /* target7.sks in Resources */,
+				8844319B23A6858E006BA59B /* target8.sks in Resources */,
+				884431AD23A685AE006BA59B /* target10.sks in Resources */,
+				884431AB23A685AE006BA59B /* target17.sks in Resources */,
 				D7BDD39A238B39520087173B /* iPhoneX-red.sks in Resources */,
 				5C0E663520F42B73005F9747 /* Main.storyboard in Resources */,
 				D7346B91238B409800169702 /* target1.sks in Resources */,
