@@ -17,21 +17,28 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     var targetName = String()
     var currentAnchorName = String()
     
-    
+//create a function to pop up a windown showing the clues and the target.
     func giveClues(text:String,title:String) {
-        let alert = UIAlertController(title: "Clues Box", message: "这是一个弹窗", preferredStyle: .alert)
-//        let cancel = UIAlertAction(title: "Retuen", style: .cancel, handler: nil)
+        //initialize a pop-window called 'alert', this is the object we want to put information in.
+        let alert = UIAlertController(title: "Clues Box", message: "this is a pop-up window", preferredStyle: .alert)
+        
+        //UIAlertAction is a button-like object to be added in the window.↓This is a OK sample,which print a string when pressed.
         let ok = UIAlertAction(title: "Got it", style: .default, handler: {
             ACTION in
             print("Got it!")
         })
+//        let cancel = UIAlertAction(title: "Retuen", style: .cancel, handler: nil)//This is a commented button
         alert.addAction(ok)
+        //use parameter 'text' to be the content in the window, which is supposed to contain some target and clue information.
         let textPrint = text
         alert.message = textPrint
+        //use parameter 'title' to be the title in the window, which is basically supposed to display whether user succeeded or not.
         alert.title = title
+        //use present function to let the whole pop-up windown be displayed.
         present(alert, animated: true, completion: nil)
     }
-    
+    // This a button function linked to the one in the very center of the main screen
+    // whenever this button is pressed, this function will reactivate the whole SCNview
     @IBAction func reRecongnize(_ sender: Any) {
         viewWillDisappear(true)
         let anchors_all = sceneView.session.currentFrame!.anchors
