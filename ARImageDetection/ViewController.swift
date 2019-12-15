@@ -173,7 +173,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Create a session configuration
         let configuration = ARImageTrackingConfiguration()
         
-        guard let referenceImages = ARReferenceImage.referenceImages(inGroupNamed: "AR Resources", bundle: Bundle.main) else { return }
+        guard let referenceImages = ARReferenceImage.referenceImages(inGroupNamed: "AR Resources-1", bundle: Bundle.main) else { return }
         configuration.trackingImages = referenceImages
         configuration.maximumNumberOfTrackedImages = 1
 
