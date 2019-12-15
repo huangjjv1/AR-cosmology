@@ -195,6 +195,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     //whenever the sceneView finds a object, this function will be automaically activated, and this is a very important function.***
     func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> (SCNNode?) {
         let name = anchor.name!
+        print(name)
         currentAnchorName = name
         nodeName = name
         var node:SCNNode
@@ -232,7 +233,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         planeNode.eulerAngles.x = -.pi / 2
         
 //        var iPhoneNode = SCNNode()
-        let location = "art.scnassets/" + name + ".scn"
+        let location = "art.scnassets/" + "target1" + ".scn" //choose which scn model to be shown, use target1.scn as an expample
         let iPhoneScene = SCNScene(named:location)! //load the 3d-model to be shown
         iPhoneNode = iPhoneScene.rootNode.childNodes.first!
         iPhoneNode.position = SCNVector3(0, 0, 0.15)
