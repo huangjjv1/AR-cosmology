@@ -10,7 +10,7 @@ Durham University’s Institute of Computational Cosmology created the Galaxy Ma
 
 ### Main Interface
 
-![avatar](./interface.png)
+![avatar](https://github.com/huangjjv1/AR-cosmology/blob/Master/interface.png)
 
 ## AR-cosmology App Utilisation Guidance
 
@@ -83,4 +83,4 @@ AR-cosmology has been featured by
 ## License
 
 ARShooter is released under the MIT license.
-[SeeLICENSE](https://github.com/huangjjv1/AR-cosmology/blob/master/LICENSE) for details.
+[See LICENSE](https://github.com/huangjjv1/AR-cosmology/blob/master/LICENSE) for details.
