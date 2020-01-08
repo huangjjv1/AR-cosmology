@@ -10,7 +10,7 @@ Durham University’s Institute of Computational Cosmology created the Galaxy Ma
 
 ### Main Interface
 
-![avatar](https://github.com/huangjjv1/AR-cosmology/blob/Master/interface.png)
+![avatar](https://github.com/huangjjv1/AR-cosmology/blob/master/interface.png)
 
 ## AR-cosmology App Utilisation Guidance
 
