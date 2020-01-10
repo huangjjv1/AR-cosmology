@@ -61,7 +61,7 @@ Application starts: It automatically calls the function viewWillAppear(), in whi
 
 - 1.    Targets recognition. The ARScneneView is running in real-time form and recognizing the image in the viewing frame. Whenever it successfully has the target and its corresponding anchor name, renderer() function is called to render and display the model in augmented reality. When the user press the detail button at the top right of the interface
 
-- 2.    Action function. Whenever a target is recognized, it will be added a series of action to the displayed model (We set it up as a spinning sphere by default). After pressing the scale up and down button (at the bottom of the interface). Function spawningmode() is called to add the function to the rendered model.
+- 2.    Action function. Whenever a target is recognized, it will be added a series of action to the displayed model (We set it up as a spinning sphere by default). After pressing the scale up and down button (at the bottom of the interface). Function spawningmode() is called to add the corresponding action function to the rendered model.
 
 #### Game system
 
@@ -82,8 +82,8 @@ Please update to the latest Xcode version (this error is a result of a syntactic
 
 AR-cosmology has been featured by
 * [Jinjie Huang](https://github.com/huangjjv1)
-* [Wei Zeng](https://github.com/qlqf72)
-* [Siyi Han](https://github.com/hwhv66)
+* [Wei Zeng](https://github.com/hwhv66)
+* [Siyi Han](https://github.com/qlqf72)
 * [Zibo Wang](https://github.com/Aikia0710)
 * [Josh Borrow](https://github.com/JBorrow)
 
