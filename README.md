@@ -81,6 +81,7 @@ Please update to the latest Xcode version (this error is a result of a syntactic
 ## Thanks
 
 AR-cosmology has been featured by
+* [Jinjie Huang](https://github.com/huangjjv1)
 * [Wei Zeng](https://github.com/qlqf72)
 * [Siyi Han](https://github.com/hwhv66)
 * [Zibo Wang](https://github.com/Aikia0710)
