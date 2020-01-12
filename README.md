@@ -83,5 +83,5 @@ AR-cosmology has been featured by
 
 ## License
 
-ARShooter is released under the MIT license.
+AR-cosmology project is released under the MIT license.
 [See LICENSE](https://github.com/huangjjv1/AR-cosmology/blob/master/LICENSE) for details.
