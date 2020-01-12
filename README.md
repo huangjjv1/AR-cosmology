@@ -1,18 +1,12 @@
 # AR-cosmology
-
---Developed by AR group-- 
+--Created by AR group-- 
 
 ## About AR Cosmology Project
 
 ### Project Brief Description:  
 
-In 2016, Durham University’s Institute of Computational Cosmology successfully created the Galaxy Makers exhibit to communicate our computational cosmology and astronomy research. [see details](http://www.galaxymakers.org/). This project is prepared for the Royal Society Summer Science Exhibition 2020 and furtherly developed in an AR form.
-
-The project aims to develop an AR cosmology app, which will be widely used in the event of cosmology exhibition to educate young generation to increase their interest in cosmic knowledge. The app enables students to view these AR galaxy model via the AR technology.
-
-Among the development process, these galaxy models are pre-simulated and will be imported into the app functions. Specifically, the app will recognize a picture hanging on a wall with an anchor point. The procedure will firstly recognize the anchor point as an axis starting point. The initial interface of the app will show the real-time picture that the device camera is pointing to. By changing the different direction values of device. When obtained value meet the pre-set galaxy, more detailed information will be popped out in 3-d model and show the formation information in 3D and multiple media based on AGN feedback, mass stars, which define the structure of the universe model. All these values will be calculated by the computer as the settled algorithm, and they will be used to make a realistic model.
-
-
+The project is for the Royal Society Summer Science Exhibition 2020 and furtherly developed in an AR form.
+Durham University’s Institute of Computational Cosmology created the Galaxy Makers exhibit in 2016 [see details](http://www.galaxymakers.org/)
 
 ### Main Interface
 
