@@ -76,7 +76,7 @@ Please update to the latest Xcode version (this error is a result of a syntactic
 
 AR-cosmology has been featured by
 * [Jinjie Huang](https://github.com/huangjjv1)
-* [Wei Zeng](https://github.com/hwhv66)
+* [Wei Zeng](https://github.com/hwhv66) (Due to some unknown errors, his contribution doesn't show up in the statistics. While his commits log is still available to see in commit list.)
 * [Siyi Han](https://github.com/qlqf72)
 * [Zibo Wang](https://github.com/Aikia0710)
 * [Josh Borrow](https://github.com/JBorrow)
