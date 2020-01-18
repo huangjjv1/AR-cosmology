@@ -1,6 +1,7 @@
 # AR-cosmology
 --Created by AR group-- 
-
+[The URL of the git repository](https://github.com/huangjjv1/AR-cosmology.git):https://github.com/huangjjv1/AR-cosmology.git
+Because of the .git file is too large to upload through Turnitin, so pleaze check it throught Github.
 ## About AR Cosmology Project
 
 ### Project Brief Description:  
