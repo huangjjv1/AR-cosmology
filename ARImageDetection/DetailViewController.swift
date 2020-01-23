@@ -27,7 +27,7 @@ class DetailViewController: UIViewController {
         if (nodeName == "") {
             contentLabel.text = ""
         } else {
-            contentLabel.text = "This is " + nodeName
+            contentLabel.text = "This is" + nodeName
         }
         
     }
